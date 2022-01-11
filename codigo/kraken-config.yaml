@@ -1,0 +1,24 @@
+app:
+   address: 0.0.0.0
+   port: 9005
+   apiVersion: v1
+log:
+    level: INFO
+    path: .
+cassandra:
+   contactPoints: 127.0.0.1
+   port: 9042
+   protoVersion: 4
+   keyspace: neurose_kraken
+   connections: 2
+   enableFullConsistency: true
+cache:
+   enableCache: true
+   useDistributed: true
+   distributedPooling: 500
+   distributionPoints: 127.0.0.1
+   expirationTimeinMinutes: 2
+   updateIntervalinMillis: 30000
+   broadCastTimeInMillis: 1000
+   consistenceToleranceInMillis: 200
+   itemLimit: 75000000
